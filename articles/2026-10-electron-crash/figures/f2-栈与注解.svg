@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#FFFFFF"/>
+<text x="60" y="56" font-family="Hiragino Sans GB" font-size="30" fill="#155E8C">同一个 dump，两种信息</text>
+
+<rect x="60" y="100" width="520" height="580" fill="#FFFFFF" stroke="#9AA3AD" stroke-width="2"/>
+<text x="88" y="146" font-family="Hiragino Sans GB" font-size="22" fill="#9AA3AD">调用栈 · 20 层返回地址</text>
+<line x1="88" y1="162" x2="552" y2="162" stroke="#E1E5E9" stroke-width="2"/>
+
+<text x="88" y="200" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0488  app.exe+0x1A25436</text>
+<text x="88" y="232" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0500  app.exe+0x9EEB141</text>
+<text x="88" y="264" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0578  app.exe+0x1A24EA8</text>
+<text x="88" y="296" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0598  app.exe+0x20B3FF</text>
+<text x="88" y="328" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x05B8  app.exe+0x1A37D6C</text>
+<text x="88" y="360" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0628  app.exe+0x68D1C6C</text>
+<text x="88" y="392" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0668  app.exe+0x68D1DAC</text>
+<text x="88" y="424" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0678  app.exe+0x151403C</text>
+<text x="88" y="456" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x06B0  app.exe+0x68D1D76</text>
+<text x="88" y="488" font-family="Menlo" font-size="17" fill="#C7CDD3">RSP+0x0708  app.exe+0x15278CB</text>
+
+<text x="88" y="540" font-family="Hiragino Sans GB" font-size="20" fill="#333333">没有符号，一个函数名都解析不出来</text>
+<text x="88" y="578" font-family="Hiragino Sans GB" font-size="20" fill="#333333">能读出的上限：有几帧偏移挨得近</text>
+<text x="88" y="616" font-family="Hiragino Sans GB" font-size="20" fill="#333333">再往下，都是脑补</text>
+<text x="88" y="654" font-family="Hiragino Sans GB" font-size="17" fill="#9AA3AD">栈告诉你「在哪」</text>
+
+<rect x="620" y="100" width="520" height="580" fill="#FFFFFF" stroke="#155E8C" stroke-width="2"/>
+<text x="648" y="146" font-family="Hiragino Sans GB" font-size="22" fill="#155E8C">Crashpad 注解 · 崩溃瞬间写入</text>
+<line x1="648" y1="162" x2="1112" y2="162" stroke="#E1E5E9" stroke-width="2"/>
+
+<rect x="648" y="184" width="464" height="52" fill="#C77F1E"/>
+<text x="668" y="217" font-family="Menlo" font-size="17" fill="#FFFFFF">nav_..._Reload_check = true</text>
+
+<rect x="648" y="248" width="464" height="52" fill="#FFFFFF" stroke="#E1E5E9" stroke-width="2"/>
+<text x="668" y="281" font-family="Menlo" font-size="17" fill="#333333">nav_..._Reload_type = 1</text>
+
+<rect x="648" y="312" width="464" height="52" fill="#C77F1E"/>
+<text x="668" y="345" font-family="Menlo" font-size="17" fill="#FFFFFF">prev_pending_entry_id = 183</text>
+
+<rect x="648" y="376" width="464" height="52" fill="#C77F1E"/>
+<text x="668" y="409" font-family="Menlo" font-size="17" fill="#FFFFFF">pending_entry_id = 183   ← 相同</text>
+
+<rect x="648" y="440" width="464" height="52" fill="#FFFFFF" stroke="#E1E5E9" stroke-width="2"/>
+<text x="668" y="473" font-family="Menlo" font-size="17" fill="#333333">pending_entry_index = 5</text>
+
+<rect x="648" y="504" width="464" height="52" fill="#FFFFFF" stroke="#E1E5E9" stroke-width="2"/>
+<text x="668" y="537" font-family="Menlo" font-size="17" fill="#333333">entries_size = 6</text>
+
+<text x="648" y="588" font-family="Hiragino Sans GB" font-size="20" fill="#333333">上一次导航还没结束，新的就来了</text>
+<text x="648" y="626" font-family="Hiragino Sans GB" font-size="20" fill="#333333">强线索，不是因果证明</text>
+<text x="648" y="664" font-family="Hiragino Sans GB" font-size="17" fill="#9AA3AD">注解告诉你「可能为什么」</text>
+
+<rect x="60" y="706" width="1080" height="66" fill="#FFFFFF" stroke="#155E8C" stroke-width="2"/>
+<text x="600" y="750" font-family="Hiragino Sans GB" font-size="30" fill="#155E8C" text-anchor="middle">根因不在栈里，在栈旁边</text>
+</svg>

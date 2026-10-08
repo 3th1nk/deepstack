@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#FFFFFF"/>
+<text x="60" y="56" font-family="Hiragino Sans GB" font-size="30" fill="#155E8C">为什么以前不崩，现在崩</text>
+
+<line x1="120" y1="330" x2="1080" y2="330" stroke="#9AA3AD" stroke-width="2"/>
+<path d="M 1064 322 L 1080 330 L 1064 338 Z" fill="#9AA3AD"/>
+
+<rect x="70" y="120" width="280" height="170" fill="#FFFFFF" stroke="#9AA3AD" stroke-width="2"/>
+<text x="96" y="158" font-family="Hiragino Sans GB" font-size="20" fill="#9AA3AD">Chromium ≤ 127</text>
+<text x="96" y="190" font-family="Hiragino Sans GB" font-size="20" fill="#9AA3AD">Electron ≤ 32</text>
+<line x1="96" y1="206" x2="324" y2="206" stroke="#E1E5E9" stroke-width="2"/>
+<text x="96" y="240" font-family="Menlo" font-size="17" fill="#333333">NOTREACHED()</text>
+<text x="96" y="266" font-family="Menlo" font-size="17" fill="#333333">→ DCHECK(false)</text>
+
+<rect x="460" y="120" width="280" height="170" fill="#FFFFFF" stroke="#C77F1E" stroke-width="2"/>
+<text x="486" y="158" font-family="Hiragino Sans GB" font-size="20" fill="#C77F1E">Chromium 128~130</text>
+<text x="486" y="190" font-family="Hiragino Sans GB" font-size="20" fill="#C77F1E">渐进迁移区</text>
+<line x1="486" y1="206" x2="714" y2="206" stroke="#E1E5E9" stroke-width="2"/>
+<text x="486" y="240" font-family="Hiragino Sans GB" font-size="19" fill="#333333">逐步改为 [[noreturn]]</text>
+<text x="486" y="266" font-family="Hiragino Sans GB" font-size="19" fill="#333333">的致命检查</text>
+
+<rect x="850" y="120" width="280" height="170" fill="#FFFFFF" stroke="#155E8C" stroke-width="2"/>
+<text x="876" y="158" font-family="Hiragino Sans GB" font-size="20" fill="#155E8C">Chromium ≥ 130</text>
+<text x="876" y="190" font-family="Hiragino Sans GB" font-size="20" fill="#155E8C">Electron 33+</text>
+<line x1="876" y1="206" x2="1104" y2="206" stroke="#E1E5E9" stroke-width="2"/>
+<text x="876" y="240" font-family="Menlo" font-size="17" fill="#333333">NOTREACHED()</text>
+<text x="876" y="266" font-family="Menlo" font-size="17" fill="#333333">→ CHECK(false)</text>
+
+<circle cx="210" cy="330" r="10" fill="#9AA3AD"/>
+<circle cx="600" cy="330" r="12" fill="#C77F1E"/>
+<circle cx="990" cy="330" r="10" fill="#155E8C"/>
+
+<line x1="210" y1="340" x2="210" y2="392" stroke="#9AA3AD" stroke-width="2"/>
+<line x1="600" y1="342" x2="600" y2="392" stroke="#C77F1E" stroke-width="2"/>
+<line x1="990" y1="340" x2="990" y2="392" stroke="#155E8C" stroke-width="2"/>
+
+<text x="210" y="424" font-family="Hiragino Sans GB" font-size="22" fill="#2F8A4C" text-anchor="middle">静默继续，不崩</text>
+<text x="600" y="424" font-family="Hiragino Sans GB" font-size="22" fill="#C77F1E" text-anchor="middle">边界路径开始暴露</text>
+<text x="990" y="424" font-family="Hiragino Sans GB" font-size="22" fill="#C0392B" text-anchor="middle">直接闪退</text>
+
+<text x="600" y="484" font-family="Hiragino Sans GB" font-size="19" fill="#9AA3AD" text-anchor="middle">不是某个版本的一刀切开关，是一段迁移过程</text>
+
+<rect x="60" y="520" width="1080" height="110" fill="#FFFFFF" stroke="#E1E5E9" stroke-width="2"/>
+<text x="88" y="562" font-family="Hiragino Sans GB" font-size="20" fill="#333333">代码一直都在重入，只是以前没人管它。</text>
+<text x="88" y="600" font-family="Hiragino Sans GB" font-size="20" fill="#333333">升级之后，同一行代码从「静默过去」变成「当场自杀」。</text>
+</svg>

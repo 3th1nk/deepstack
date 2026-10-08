@@ -1,0 +1,26 @@
+# 崩溃转储与内存镜像：体积大且含真实内存数据，一律不入库
+*.dmp
+*.mdmp
+*.core
+*.mem
+
+# 原始未脱敏样本
+samples/raw/
+*未脱敏*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# 本地运行产物
+report.md
+result.json
+!samples/report-sample.md

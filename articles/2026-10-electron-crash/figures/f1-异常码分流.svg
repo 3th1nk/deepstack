@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" fill="#FFFFFF"/>
+<text x="60" y="58" font-family="Hiragino Sans GB" font-size="30" fill="#155E8C">崩溃异常码的第一次分流</text>
+
+<rect x="490" y="104" width="220" height="56" fill="#FFFFFF" stroke="#155E8C" stroke-width="2"/>
+<text x="600" y="140" font-family="Hiragino Sans GB" font-size="22" fill="#155E8C" text-anchor="middle">异常码</text>
+
+<path d="M 600 160 L 600 196 L 300 196 L 300 230" stroke="#9AA3AD" stroke-width="2" fill="none"/>
+<path d="M 600 160 L 600 196 L 900 196 L 900 230" stroke="#9AA3AD" stroke-width="2" fill="none"/>
+
+<rect x="70" y="230" width="460" height="250" fill="#FFFFFF" stroke="#155E8C" stroke-width="2"/>
+<text x="96" y="272" font-family="Menlo" font-size="24" fill="#155E8C">0x80000003</text>
+<text x="96" y="302" font-family="Menlo" font-size="17" fill="#9AA3AD">EXCEPTION_BREAKPOINT</text>
+<text x="96" y="344" font-family="Hiragino Sans GB" font-size="22" fill="#155E8C">代码主动触发</text>
+<text x="96" y="382" font-family="Hiragino Sans GB" font-size="20" fill="#333333">一条 __debugbreak()，不是访问出错</text>
+<text x="96" y="416" font-family="Hiragino Sans GB" font-size="20" fill="#333333">→ 去查 CHECK() / NOTREACHED()</text>
+<text x="96" y="452" font-family="Hiragino Sans GB" font-size="17" fill="#9AA3AD">OOM 也会走这条，靠 CPU 数字另判</text>
+
+<rect x="670" y="230" width="460" height="250" fill="#FFFFFF" stroke="#9AA3AD" stroke-width="2"/>
+<text x="696" y="272" font-family="Menlo" font-size="19" fill="#9AA3AD">0xC0000005 / 0xC00000FD</text>
+<text x="696" y="310" font-family="Hiragino Sans GB" font-size="22" fill="#9AA3AD">被杀</text>
+<text x="696" y="348" font-family="Hiragino Sans GB" font-size="20" fill="#333333">访问违例 / 栈溢出</text>
+<text x="696" y="384" font-family="Hiragino Sans GB" font-size="20" fill="#333333">→ 空指针、越界、无限递归</text>
+<text x="696" y="420" font-family="Hiragino Sans GB" font-size="20" fill="#333333">→ 内存与调用深度方向</text>
+
+<text x="60" y="546" font-family="Hiragino Sans GB" font-size="20" fill="#333333">一个异常码把排查方向劈成两半。这一步不产生结论，但它决定你往哪边走。</text>
+<text x="60" y="586" font-family="Hiragino Sans GB" font-size="20" fill="#333333">本次落在左边：程序是自己停下的，不是被谁打死的。</text>
+</svg>

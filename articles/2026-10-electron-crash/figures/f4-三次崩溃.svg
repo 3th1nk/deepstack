@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450">
+<rect width="1200" height="450" fill="#FFFFFF"/>
+<text x="60" y="54" font-family="Hiragino Sans GB" font-size="30" fill="#155E8C">先把「偶发」排除掉</text>
+
+<line x1="120" y1="240" x2="1080" y2="240" stroke="#9AA3AD" stroke-width="2"/>
+
+<circle cx="240" cy="240" r="9" fill="#9AA3AD"/>
+<circle cx="600" cy="240" r="9" fill="#9AA3AD"/>
+<circle cx="960" cy="240" r="13" fill="#C77F1E"/>
+
+<text x="240" y="196" font-family="Menlo" font-size="19" fill="#9AA3AD" text-anchor="middle">07-28 08:19</text>
+<text x="600" y="196" font-family="Menlo" font-size="19" fill="#9AA3AD" text-anchor="middle">07-30 16:22</text>
+<text x="960" y="186" font-family="Menlo" font-size="19" fill="#C77F1E" text-anchor="middle">08-01 16:23</text>
+
+<text x="240" y="292" font-family="Hiragino Sans GB" font-size="19" fill="#9AA3AD" text-anchor="middle">第 1 次</text>
+<text x="600" y="292" font-family="Hiragino Sans GB" font-size="19" fill="#9AA3AD" text-anchor="middle">第 2 次</text>
+<text x="960" y="292" font-family="Hiragino Sans GB" font-size="19" fill="#C77F1E" text-anchor="middle">本次分析的 dump</text>
+
+<rect x="60" y="336" width="1080" height="76" fill="#FFFFFF" stroke="#155E8C" stroke-width="2"/>
+<text x="88" y="378" font-family="Hiragino Sans GB" font-size="20" fill="#333333">3 条记录，跨 3 天 —— 不是偶发，是有一条固定路径，只是还没被看见。</text>
+
+<text x="60" y="432" font-family="Menlo" font-size="17" fill="#9AA3AD">metadata.bin · 310 字节 · Crashpad DAPC</text>
+</svg>
