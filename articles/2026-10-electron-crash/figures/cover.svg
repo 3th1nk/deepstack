@@ -4,7 +4,7 @@
 <!-- 左：文案区 -->
 <text x="64" y="165" font-family="Hiragino Sans GB" font-size="42" fill="#155E8C">根因不在栈里</text>
 <text x="64" y="219" font-family="Hiragino Sans GB" font-size="42" fill="#C77F1E">在栈旁边</text>
-<text x="64" y="271" font-family="Hiragino Sans GB" font-size="15" fill="#9AA3AD">没有符号表的时候，崩溃栈该怎么读</text>
+<text x="64" y="271" font-family="Hiragino Sans GB" font-size="15" fill="#9AA3AD">不挂符号的时候，崩溃栈该怎么读</text>
 
 <!-- 右：探照灯光锥 -->
 <polygon points="660,84 500,330 850,330" fill="#C77F1E" opacity="0.10"/>

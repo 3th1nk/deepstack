@@ -54,7 +54,7 @@ deepstack/
 
 | 目录 | 标题 | 类型 | 工具 |
 | --- | --- | --- | --- |
-| [`2026-10-electron-crash`](articles/2026-10-electron-crash/) | 没有符号表的时候，崩溃栈该怎么读 | 崩溃分析 | [`minidump_analyzer.py`](tools/minidump_analyzer.py) |
+| [`2026-10-electron-crash`](articles/2026-10-electron-crash/) | 不挂符号的时候，崩溃栈该怎么读 | 崩溃分析 | [`minidump_analyzer.py`](tools/minidump_analyzer.py) |
 
 ---
 
