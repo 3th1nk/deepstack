@@ -56,7 +56,7 @@ python3 minidump_analyzer.py ./crashes/ -o report.md
 
 | 路径 | 说明 |
 | --- | --- |
-| `figures/` | 文章配图（4 张内文图 + 封面），含 SVG 源与 @2x PNG |
+| `figures/` | 文章配图（4 张内文图 + 封面），SVG 源。PNG 是渲染产物不入库，本地跑 `render-figures.js` 可生成 |
 | `samples/metadata.bin` | Crashpad 的崩溃历史文件（310 字节，DAPC 格式，记了 3 次崩溃） |
 | `samples/report-sample.md` | 脚本对真实 dump 的完整输出示例（已脱敏） |
 

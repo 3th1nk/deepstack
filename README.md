@@ -21,7 +21,7 @@ deepstack/
 └── articles/              # 每篇文章一个目录，命名 YYYY-MM-<slug>
     └── 2026-10-electron-crash/
         ├── README.md      # 本篇说明：问题、结论、复现步骤、关联文章
-        ├── figures/       # 配图：SVG 源 + @2x PNG
+        ├── figures/       # 配图：只放 SVG 源（PNG 是渲染产物，不入库）
         └── samples/       # 脱敏样本与输出示例
 ```
 
@@ -29,7 +29,7 @@ deepstack/
 
 1. 建目录：`articles/YYYY-MM-<slug>/`，slug 用英文小写短横线（如 `bmc-ipmi-weirdness`）
 2. 写 `README.md`：问题背景 → 结论 → 复现步骤 → 关联公众号文章
-3. 配图放 `figures/`，**同时保留 SVG 源文件**（改起来方便，光有 PNG 下次得重画）
+3. 配图放 `figures/`，**只放 SVG 源**。PNG/JPG 是渲染产物，属于 build artifact，不入库（`.gitignore` 已排除）——需要看效果时本地跑 `render-figures.js` 生成即可。首批误提交过 694 KB 的 `@2x.png`，已移除
 4. 样本放 `samples/`，**必须先脱敏**（见下）
 5. 纯工具脚本放 `tools/`，只服务单篇的放本篇目录下
 6. 回来更新本文件的索引表

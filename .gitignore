@@ -1,3 +1,9 @@
+# 配图的渲染产物：由 SVG 经 render-figures.js 生成，属于 build artifact。
+# 只提交 SVG 源（13 KB），PNG 是它的 53 倍体积且无人引用，不入库。
+*.png
+*.jpg
+*.jpeg
+
 # 崩溃转储与内存镜像：体积大且含真实内存数据，一律不入库
 *.dmp
 *.mdmp
