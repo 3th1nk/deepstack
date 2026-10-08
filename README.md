@@ -62,7 +62,7 @@ deepstack/
 
 | 脚本 | 用途 | 依赖 |
 | --- | --- | --- |
-| [`tools/minidump_analyzer.py`](tools/minidump_analyzer.py) | 解析 Windows minidump，提取崩溃日志、Crashpad 注解、崩溃历史。**不需要 Windows，不需要符号，不需要调试器** | 仅标准库 |
+| [`tools/minidump_analyzer.py`](tools/minidump_analyzer.py) | 从 minidump 里提取崩溃日志、Crashpad 注解、崩溃历史。**不需要 Windows，不需要符号，不需要调试器**。注意：它是**数据提取器不是分析器**，报告里的「诊断结论」只是规则匹配 | 仅标准库 |
 
 用法见 [`tools/README.md`](tools/README.md)。
 
